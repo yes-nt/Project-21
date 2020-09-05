@@ -29,14 +29,14 @@ function draw() {
    gun.velocityX = 0;
   
 var deformation= (0.5 * weight* speed* speed)/(thickness*thickness*thickness);
-  if(deformation<40){
+  if(deformation<10){
   wall.shapeColor=color("green");
   stroke("white");
   textSize(20);
   fill ("white");
   text ("That's a really safe wall! :D",100,100);  
   }
-  if(deformation>40 ){
+  if(deformation>10 ){
   wall.shapeColor=color("red");
   stroke("white");
   textSize(20);
